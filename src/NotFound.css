@@ -1,0 +1,251 @@
+.nf-page {
+  min-height: 100vh;
+  background: #0a0a08;
+  color: #f1efe9;
+  display: flex;
+  flex-direction: column;
+}
+
+.nf-topbar {
+  width: 100%;
+  padding: 28px 24px;
+  border-bottom: 1px solid #2a2a26;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.nf-brand .nav-logo {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.nf-brand .nav-logo span {
+  color: #d5a944;
+}
+
+.nf-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nf-top-nav {
+  display: none;
+  gap: 26px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.nf-top-nav a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.nf-top-nav a:hover {
+  color: #d5a944;
+}
+
+.nf-user-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid #2a2a26;
+  background: transparent;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.nf-user-btn:hover {
+  background: #2a2a26;
+}
+
+.nf-main {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.nf-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: rgba(213, 169, 68, 0.07);
+  transform: translate(-50%, -50%);
+  filter: blur(120px);
+  pointer-events: none;
+}
+
+.nf-center {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  width: 100%;
+  text-align: center;
+}
+
+.nf-hero-code {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(160px, 32vw, 290px);
+  line-height: 0.9;
+  font-weight: 700;
+  background: linear-gradient(to bottom, rgba(213, 169, 68, 0.4), rgba(213, 169, 68, 0.07));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  user-select: none;
+  opacity: 0.55;
+}
+
+.nf-hero-copy {
+  margin-top: -80px;
+}
+
+.nf-hero-copy h1 {
+  margin: 0 0 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(36px, 6vw, 72px);
+  line-height: 1.1;
+}
+
+.nf-hero-copy h1 em {
+  color: #d5a944;
+  font-style: italic;
+}
+
+.nf-hero-copy p {
+  margin: 0 auto 28px;
+  max-width: 720px;
+  color: #9ca3af;
+  font-size: clamp(16px, 2.2vw, 24px);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.nf-cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.nf-btn {
+  min-width: 220px;
+  padding: 14px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.nf-btn-primary {
+  background: #d5a944;
+  color: #0a0a08;
+  box-shadow: 0 10px 30px rgba(213, 169, 68, 0.2);
+}
+
+.nf-btn-primary:hover {
+  transform: translateY(-1px);
+  background: rgba(213, 169, 68, 0.9);
+}
+
+.nf-btn-ghost {
+  border: 1px solid #2a2a26;
+  color: #e2e8f0;
+}
+
+.nf-btn-ghost:hover {
+  border-color: rgba(213, 169, 68, 0.5);
+}
+
+.nf-artifact-wrap {
+  margin-top: 44px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.55;
+}
+
+.nf-line {
+  width: 1px;
+  height: 84px;
+  background: linear-gradient(to bottom, transparent, #2a2a26, rgba(213, 169, 68, 0.45));
+}
+
+.nf-artifact-card {
+  border: 1px solid #2a2a26;
+  border-radius: 12px;
+  padding: 14px;
+  background: rgba(42, 42, 38, 0.1);
+  backdrop-filter: blur(3px);
+}
+
+.nf-artifact {
+  width: min(260px, 62vw);
+  height: 160px;
+  border: 1px solid #2a2a26;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 10, 8, 0.55);
+}
+
+.nf-artifact .material-symbols-outlined {
+  font-size: 56px;
+  color: rgba(213, 169, 68, 0.35);
+}
+
+.nf-footer {
+  width: 100%;
+  border-top: 1px solid #2a2a26;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: #6b7280;
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.nf-footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+.nf-footer-links a {
+  color: #6b7280;
+  text-decoration: none;
+}
+
+.nf-footer-links a:hover {
+  color: #d5a944;
+}
+
+@media (min-width: 768px) {
+  .nf-topbar,
+  .nf-footer {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .nf-top-nav {
+    display: flex;
+  }
+}
