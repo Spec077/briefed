@@ -776,29 +776,32 @@ export default function Home() {
       </div>
 
       <footer>
-        <div className="footer-newsletter">
-          <h3>Get meeting productivity tips weekly</h3>
-          <p>Short, practical tactics to run better meetings and ship decisions faster.</p>
-          <form className="newsletter-form" onSubmit={onNewsletterSubmit}>
-            <input
-              type="email"
-              value={newsletterEmail}
-              onChange={(event) => setNewsletterEmail(event.target.value)}
-              placeholder="you@company.com"
-              aria-label="Email address"
-              required
-            />
-            <button type="submit">Subscribe</button>
-          </form>
-          {newsletterSubmitted && <div className="newsletter-success">Thanks. You are on the list.</div>}
+        <div className="footer-top">
+          <div className="footer-newsletter">
+            <h3>Get meeting productivity tips weekly</h3>
+            <p>Short, practical tactics to run better meetings and ship decisions faster.</p>
+            <form className="newsletter-form" onSubmit={onNewsletterSubmit}>
+              <input
+                type="email"
+                value={newsletterEmail}
+                onChange={(event) => setNewsletterEmail(event.target.value)}
+                placeholder="you@company.com"
+                aria-label="Email address"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+            {newsletterSubmitted && <div className="newsletter-success">Thanks. You are on the list.</div>}
+          </div>
+          <div className="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Security</a>
+            <a href="#">Status</a>
+            <a href="#">Twitter</a>
+          </div>
         </div>
-        <div>
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Security</a>
-          <a href="#">Status</a>
-          <a href="#">Twitter</a>
-        </div>
+        <div className="footer-copy">© 2026 Briefed. All rights reserved.</div>
       </footer>
 
       {!cookieConsent && (
